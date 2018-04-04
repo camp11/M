@@ -64,21 +64,16 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Wc' || $command == 'Welcome' ) {
+	    if ($command == 'Hai' || $command == 'hay' ) {
         $balas = array(
             'replyToken' => $replyToken,
-            'messages' => array (
-  'type' => 'uri',
-  'label' => 'WELCOME TO YPH GROUP',
-  'linkUri' => 'https://preview.ibb.co/dn8R1c/IMG_000000_000000.jpg',
-  'area' => 
-  array (
-    'x' => 0,
-    'y' => 0,
-    'width' => 520,
-    'height' => 520,
-  ),
-)
+            'messages' => array(
+                array (
+		'type' => 'image',
+		'originalContentUrl' => 'https://preview.ibb.co/dn8R1c/IMG_000000_000000.jpg',
+		'previewImageUrl' => 'https://preview.ibb.co/dn8R1c/IMG_000000_000000.jpg',
+		)
+            )
         );
     }
 }
