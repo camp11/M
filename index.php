@@ -69,10 +69,17 @@ if($message['type']=='text') {
             'replyToken' => $replyToken,
             'messages' => array(
                 array (
-		'type' => 'image',
-		'originalContentUrl' => 'https://preview.ibb.co/dn8R1c/IMG_000000_000000.jpg',
-		'previewImageUrl' => 'https://preview.ibb.co/dn8R1c/IMG_000000_000000.jpg',
-		)
+  'type' => 'uri',
+  'label' => 'https://thumb.ibb.co/mBgfSH/IMG_000000_000000.jpg',
+  'linkUri' => 'https://www.smule.com/yph_official',
+  'area' => 
+  array (
+    'x' => 0,
+    'y' => 0,
+    'width' => 1040,
+    'height' => 1040,
+  ),
+)
             )
         );
     }
