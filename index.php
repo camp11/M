@@ -63,19 +63,45 @@ if($message['type']=='text') {
     }
 }
 //pesan bergambar
-if($message['type']=='text') {
-	    if ($command == 'Wc' || $command == 'WELCOME' ) {
-        $balas = array(
-            'replyToken' => $replyToken,
-            'messages' => array(
-                array (
-  'type' => 'uri',
-  'label' => 'https://thumb.ibb.co/mBgfSH/IMG_000000_000000.jpg',
-  'linkUri' => 'https://www.smule.com/yph_official',
-            )
-        );
-    }
-}
+if($message['type']=='text')
+	if ($command == 'Wc' || $command == 'Welcome' )
+	{
+		
+		
+		$balas = array(
+							'replyToken' => $replyToken,														
+							'messages' => array(
+array (
+  'type' => 'template',
+  'altText' => 'SELAMAT DATANG DI UPH FAMILY',
+  'template' => 
+  array (
+    'type' => 'carousel',
+    'columns' => 
+    array (
+      0 => 
+      array (
+        'thumbnailImageUrl' => 'https://preview.ibb.co/ewwVCH/IMG_000000_000000_1.jpg',
+        'imageBackgroundColor' => '#FFFFFF',
+        'actions' => 
+        array (
+          0 => 
+          array (
+            'type' => 'uri',
+            'label' => 'CHAT',
+            'uri' => 'http://tiny.cc/FIS_Lee',
+          ),
+        ),
+      ),
+    ),
+    'imageAspectRatio' => 'rectangle',
+    'imageSize' => 'cover',
+  ),
+)
+							)
+						);
+				
+	}
 //pesan bergambar
 if($message['type']=='text')
 	if ($command == 'Jadwal' || $command == 'JADWAL' )
