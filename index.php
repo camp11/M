@@ -64,7 +64,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'wel' || $command == 'WELCOME' ) {
+	    if ($command == 'Wc' || $command == 'WC' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
@@ -79,27 +79,33 @@ if($message['type']=='text') {
     'imageAspectRatio' => 'rectangle',
     'imageSize' => 'cover',
     'imageBackgroundColor' => '#FFFFFF',
-    'title' => 'YANG PENTING HAPPY -- YPH',
-    'text' => 'Welcome --- Selamat Bergabung di YPH Family',
+    'title' => 'Menu',
+    'text' => 'Please select',
     'defaultAction' => 
     array (
       'type' => 'uri',
-      'label' => 'OFFICIAL SMULE',
-      'uri' => 'http://www.smule.com/YPH_OFFICIAL,
+      'label' => 'View detail',
+      'uri' => 'https://www.smule.com/YPH_OFFICIAL',
     ),
     'actions' => 
     array (
       0 => 
       array (
-        'type' => 'message',
-        'label' => 'STAFF',
-        'text' => 'Welcome',
+        'type' => 'postback',
+        'label' => 'Buy',
+        'data' => 'action=buy&itemid=123',
       ),
       1 => 
       array (
-        'type' => 'message',
-        'label' => 'JADWAL',
-        'text' => 'Jadwal',
+        'type' => 'postback',
+        'label' => 'Add to cart',
+        'data' => 'action=add&itemid=123',
+      ),
+      2 => 
+      array (
+        'type' => 'uri',
+        'label' => 'View detail',
+        'uri' => 'https://www.smule.com/YPH_OFFICIAL',
       ),
     ),
   ),
