@@ -65,30 +65,34 @@ if($message['type']=='text') {
 //pesan bergambar
 if($message['type']=='text') {
 	    if ($command == 'Wc' || $command == 'WELCOME' ) {
+
         $balas = array(
             'replyToken' => $replyToken,
             'messages' => array(
                 array (
   'type' => 'template',
-  'altText' => 'SELAMAT DATANG',
+  'altText' => 'This is a buttons template',
   'template' => 
   array (
-    'type' => 'image_carousel',
-    'columns' => 
+    'type' => 'buttons',
+    'thumbnailImageUrl' => 'https://preview.ibb.co/bGcZbc/20180407_104336.jpg',
+    'imageAspectRatio' => 'rectangle',
+    'imageSize' => 'cover',
+    'imageBackgroundColor' => '#FFFFFF',
+    'title' => 'WELCOME',
+    'text' => 'Welcomw --- Selamat Bergabung di YPH Family [Yang Penting Happy]',
+    'defaultAction' => 
     array (
-      0 => 
-      array (
-        'imageUrl' => 'https://preview.ibb.co/bGcZbc/20180407_104336.jpg',
-        'action' => 
-        array (
-            'type' => 'message',
-            'label' => 'WELCOME TO YPH FAMILY',
-            'text' => 'Welcome',
-        ),
-      ),
+      'type' => 'message',
+      'label' => 'Welcome',
+      'text' => 'Wc',
     ),
   ),
 )
+            )
+        );
+    }
+}
 //pesan bergambar
 if($message['type']=='text')
 	if ($command == 'Jadwal' || $command == 'JADWAL' )
