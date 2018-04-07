@@ -71,7 +71,7 @@ if($message['type']=='text') {
             'messages' => array(
                 array (
   'type' => 'template',
-  'altText' => 'This is a buttons template',
+  'altText' => 'sELAMAT DATANG DI YPH GROUP',
   'template' => 
   array (
     'type' => 'buttons',
@@ -79,8 +79,8 @@ if($message['type']=='text') {
     'imageAspectRatio' => 'rectangle',
     'imageSize' => 'cover',
     'imageBackgroundColor' => '#FFFFFF',
-    'title' => 'Menu',
-    'text' => 'Please select',
+    'title' => 'YANG PENTING HAPPY -- YPH',
+    'text' => 'Welcome --- Selamat Bergabung di YPH Family',
     'defaultAction' => 
     array (
       'type' => 'uri',
@@ -91,20 +91,20 @@ if($message['type']=='text') {
     array (
       0 => 
       array (
-        'type' => 'postback',
-        'label' => 'Buy',
-        'data' => 'action=buy&itemid=123',
+        'type' => 'message',
+        'label' => 'STAFF',
+        'text' => 'Welcome',
       ),
       1 => 
       array (
-        'type' => 'postback',
-        'label' => 'Add to cart',
-        'data' => 'action=add&itemid=123',
+        'type' => 'message',
+        'label' => 'JADWAL',
+        'text' => 'Jadwal',
       ),
       2 => 
       array (
         'type' => 'uri',
-        'label' => 'View detail',
+        'label' => 'OFFICIAL SMULE',
         'uri' => 'https://www.smule.com/YPH_OFFICIAL',
       ),
     ),
