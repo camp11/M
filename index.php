@@ -63,45 +63,39 @@ if($message['type']=='text') {
     }
 }
 //pesan bergambar
-if($message['type']=='text')
-	if ($command == 'Wc' || $command == 'Welcome' )
-	{
-		
-		
-		$balas = array(
-							'replyToken' => $replyToken,														
-							'messages' => array(
-array (
-  'type' => 'template',
-  'altText' => 'SELAMAT DATANG DI UPH FAMILY',
-  'template' => 
+if($message['type']=='text') {
+	    if ($command == 'Wc' || $command == 'WELCOME' ) {
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array (
+  'size' => 
   array (
-    'type' => 'carousel',
-    'columns' => 
+    'width' => 2500,
+    'height' => 1686,
+  ),
+  'selected' => false,
+  'name' => 'Welcome',
+  'chatBarText' => 'Tap to open',
+  'areas' => 
+  array (
+    0 => 
     array (
-      0 => 
+      'bounds' => 
       array (
-        'thumbnailImageUrl' => 'https://preview.ibb.co/ewwVCH/IMG_000000_000000_1.jpg',
-        'imageBackgroundColor' => '#FFFFFF',
-        'actions' => 
-        array (
-          0 => 
-          array (
-            'type' => 'uri',
-            'label' => 'CHAT',
-            'uri' => 'http://tiny.cc/FIS_Lee',
-          ),
-        ),
+        'x' => 0,
+        'y' => 0,
+        'width' => 2500,
+        'height' => 1686,
+      ),
+      'action' => 
+      array (
+        'type' => 'postback',
+        'data' => 'Welcome',
       ),
     ),
-    'imageAspectRatio' => 'rectangle',
-    'imageSize' => 'cover',
   ),
 )
-							)
-						);
-				
-	}
 //pesan bergambar
 if($message['type']=='text')
 	if ($command == 'Jadwal' || $command == 'JADWAL' )
