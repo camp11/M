@@ -69,29 +69,22 @@ if($message['type']=='text') {
             'replyToken' => $replyToken,
             'messages' => array(
                 array (
-  'size' => 
+  'type' => 'template',
+  'altText' => 'SELAMAT DATANG',
+  'template' => 
   array (
-    'width' => 2500,
-    'height' => 1686,
-  ),
-  'selected' => false,
-  'name' => 'Welcome',
-  'chatBarText' => 'Tap to open',
-  'areas' => 
-  array (
-    0 => 
+    'type' => 'image_carousel',
+    'columns' => 
     array (
-      'bounds' => 
+      0 => 
       array (
-        'x' => 0,
-        'y' => 0,
-        'width' => 2500,
-        'height' => 1686,
-      ),
-      'action' => 
-      array (
-        'type' => 'postback',
-        'data' => 'Welcome',
+        'imageUrl' => 'https://preview.ibb.co/bGcZbc/20180407_104336.jpg',
+        'action' => 
+        array (
+            'type' => 'message',
+            'label' => 'WELCOME TO YPH FAMILY',
+            'text' => 'Welcome',
+        ),
       ),
     ),
   ),
