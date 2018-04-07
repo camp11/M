@@ -79,13 +79,28 @@ if($message['type']=='text') {
     'imageAspectRatio' => 'rectangle',
     'imageSize' => 'cover',
     'imageBackgroundColor' => '#FFFFFF',
-    'title' => 'WELCOME',
-    'text' => 'Welcomw --- Selamat Bergabung di YPH Family [Yang Penting Happy]',
+    'title' => 'YANG PENTING HAPPY -- YPH',
+    'text' => 'Welcome --- Selamat Bergabung di YPH Family',
     'defaultAction' => 
     array (
-      'type' => 'message',
-      'label' => 'Welcome',
-      'text' => 'Wc',
+      'type' => 'uri',
+      'label' => 'OFFICIAL SMULE',
+      'uri' => 'http://www.smule.com/YPH_OFFICIAL,
+    ),
+    'actions' => 
+    array (
+      0 => 
+      array (
+        'type' => 'message',
+        'label' => 'STAFF',
+        'text' => 'Welcome',
+      ),
+      1 => 
+      array (
+        'type' => 'message',
+        'label' => 'JADWAL',
+        'text' => 'Jadwal',
+      ),
     ),
   ),
 )
